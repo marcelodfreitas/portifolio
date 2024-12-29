@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", serif;
+    scroll-behavior: smooth;
 }
 
 .container-principal {
@@ -56,6 +57,10 @@ li a {
 li a:hover {
     color: #ff6600;
     transition: 0.5s;
+}
+
+.home {
+    color: #ff6600;
 }
 
 .nome {
@@ -228,39 +233,15 @@ footer a {
     margin-right: 10px;
 }
 
-.social:hover {
-    background-color: #000000;
-    transition: 0.5s;
-    color: #ffffff;
+.social i {
+    background-color: #ff6600;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 50%;
 }
 
-.social a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-
-.instagram i:hover {
-    color: #ff6600;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.linkedin i:hover {
-    color: #0077B5;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.github i:hover {
-    color: #1d3d6f;
-    transform: scale(1.1);
-    transition: 0.5s;
-}
-
-.whatsapp i:hover {
-    color: #00ff5e;
-    transform: scale(1.1);
+.social i:hover {
+    transform: scale(1.4);
     transition: 0.5s;
 }
 
