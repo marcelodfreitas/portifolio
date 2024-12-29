@@ -59,6 +59,11 @@ li a:hover {
     transition: 0.5s;
 }
 
+li a:focus, li a:active {
+    outline: 2px solid #ff6600;
+    outline-offset: 4px;
+}
+
 .home {
     color: #ff6600;
 }
@@ -144,7 +149,7 @@ li a:hover {
 
 .card {
     background-color: #000000;
-    height: 365px;
+    height: 385px;
     width: 335px;
     border-radius: 20px;
     padding: 20px 35px;
@@ -180,6 +185,20 @@ li a:hover {
     color: #000000;
 }
 
+h1, h2, h5 {
+    font-family: "Poppins", sans-serif;
+}
+
+p, li, button {
+    font-family: "Nunito", sans-serif;
+}
+
+
+button {
+    transition: all 0.3s ease;
+}
+
+
 .card button:hover {
     background-color: #000000;
     border: 2px solid #ff6600;
@@ -205,6 +224,13 @@ footer {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 40px;
+}
+
+footer .social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
 
 footer h5 {
@@ -257,4 +283,54 @@ footer a {
     border-radius: 50px;
     cursor: pointer;
     transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .imagem {
+        position: relative;
+        left: auto;
+        top: 20px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .nome {
+        top: 180px;
+        left: 20px;
+        text-align: center;
+    }
+
+    .nome h1 {
+        font-size: 50px;
+    }
+
+    .nome h3 {
+        font-size: 20px;
+    }
+
+    .text-about {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
 }
