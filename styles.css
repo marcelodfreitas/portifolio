@@ -26,7 +26,6 @@
     transition: 0.3s;
 }
 
-
 .imagem {
     position: relative;
     left: 800px;
@@ -72,8 +71,6 @@ li a:hover {
     transition: 0.5s;
 }
 
-
-
 .navList {
     color: #ff6600;
 }
@@ -101,7 +98,7 @@ li a:hover {
 .perfil {
     height: 320px;
     position: relative;
-    left: 250px;
+    left: 150px;
     border-radius: 50%;
     
 }
@@ -113,13 +110,14 @@ li a:hover {
 }
 
 .text-about {
-    margin-left: 280px;
+    margin-left: 200px;
+    margin-right: 100px;
 }
 
 .text-about h1 {
     font-size: 60px;
     color: #fff;
-    text-align: center;
+    
 }
 
 .text-about p {
@@ -225,6 +223,7 @@ button {
 .projeto2 {
     width: 300px;
     position: relative;
+    right: 20px;
     
 }
 
