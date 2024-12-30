@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", serif;
-    scroll-behavior: smooth;
 }
 
 .container-principal {
@@ -13,6 +12,20 @@
     width: 100%;
     background-color: #191919;
 }
+
+.mobileMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobileMenu div {
+    width: 32px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 8px;
+    transition: 0.3s;
+}
+
 
 .imagem {
     position: relative;
@@ -59,12 +72,9 @@ li a:hover {
     transition: 0.5s;
 }
 
-li a:focus, li a:active {
-    outline: 2px solid #ff6600;
-    outline-offset: 4px;
-}
 
-.home {
+
+.navList {
     color: #ff6600;
 }
 
@@ -193,11 +203,9 @@ p, li, button {
     font-family: "Nunito", sans-serif;
 }
 
-
 button {
     transition: all 0.3s ease;
 }
-
 
 .card button:hover {
     background-color: #000000;
@@ -285,32 +293,95 @@ footer a {
     transition: 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
     .imagem {
         position: relative;
-        left: auto;
-        top: 20px;
-        width: 300px;
+        left: 70px;
+        top: -30px;
+        width: 250px;
         margin: 0 auto;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
+    .navList {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        background-color: #191919;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 1;
+        
+    }
+
+    .navList li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .navList.active {
+        transform: translateX(0);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .mobileMenu {
+        display: block;
+        z-index: 1;
+        position: relative;
+        bottom: 55px;
+        left: 10px;
+    }
+
+    .portfolio {
+        font-size: 30px;
+        margin-bottom: 100px;
+    }
+
     .nome {
-        top: 180px;
+        top: 420px;
         left: 20px;
         text-align: center;
     }
 
     .nome h1 {
-        font-size: 50px;
+        font-size: 45px;
+        margin-left: 10px;
     }
 
     .nome h3 {
         font-size: 20px;
     }
 
+    .about img {
+        position: absolute;
+        left: 50px;
+        opacity: 0.5;
+        width: 280px;
+        height: 280px;
+    }
+
     .text-about {
         margin-left: 20px;
         margin-right: 20px;
+        z-index: 1;
     }
 
     .cards {
@@ -333,4 +404,17 @@ footer a {
     nav li {
         margin: 10px 0;
     }
+
+    .mobileMenu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+    
+    .mobileMenu.active .line2 {
+        opacity: 0;
+    }
+    
+    .mobileMenu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
 }
+
