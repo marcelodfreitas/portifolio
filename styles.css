@@ -119,6 +119,7 @@ li a:hover {
 .text-about h1 {
     font-size: 60px;
     color: #fff;
+    text-align: center;
 }
 
 .text-about p {
