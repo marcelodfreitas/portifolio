@@ -389,6 +389,12 @@ footer a {
         gap: 20px;
     }
 
+    .projeto2 {
+        width: 100%;
+        position: relative;
+        right: 0;
+    }
+
     .card {
         width: 90%;
     }
