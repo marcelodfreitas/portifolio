@@ -31,7 +31,7 @@
           <div class="line3"></div>
         </div>
         <ul class="navList">
-          <li class="navLinks"><a href="#home">Home</a></li>
+          <li class="navLinks"><a href="#">Home</a></li>
           <li class="navLinks"><a href="#sobre">Sobre</a></li>
           <li class="navLinks"><a href="#projetos">Projetos</a></li>
           <li class="navLinks"><a href="#contato">Contato</a></li>
@@ -39,14 +39,14 @@
       </nav>
 
       <div id="home" class="nome">
-        <h1>Marcelo <span>Freitas</span></h1>
-        <h3><span>Programador</span> Full Stack</h3>
+        <h1 class="lempek">Marcelo <span class="lempek">Lempek</span></h1>
+        <h3 class="programador"><span class="programador">Programador</span> Full Stack</h3>
       </div>
       <img src="./img/imagem.webp" alt="imagem fullstack" class="imagem" />
     </section>
 
     <section id="sobre" class="about">
-      <img src="./img/perfil.png" class="perfil" alt="foto de perfil" />
+      <img src="./img/prof.png" class="perfil" alt="foto de perfil" />
       <div class="text-about">
         <h1>Sobre Mim</h1>
         <p>
@@ -62,43 +62,73 @@
 
     <section id="projetos" class="section2">
       <div class="projetos">
-        <h2>Principais Projetos</h2>
+        <h2>Principais <span class="project">Projetos</span></h2>
 
         <div class="cards">
           <div class="card">
-            <img src="./img/1.png" alt="" />
+            <img src="./img/1.png" alt="" class="projeto1" />
             <h5>Gerador de Senha Forte</h5>
             <p>
               Este projeto envolve Javascript para a geração dos valores da
               senha forte.
             </p>
-            <a
-              href="https://github.com/marcelodfreitas/GERADOR-DE-SENHA/tree/master"
+            <a target="_blank" href="https://gerador-de-senha-seven-livid.vercel.app/"
               ><button>Ver Projeto</button></a
             >
           </div>
 
           <div class="card">
             <img src="./img/2.png" alt="" class="projeto2" />
-            <h5>Encurtador de Links</h5>
+            <h5>Upload File</h5>
             <p>
-              Uma aplicação web utilizando Node.js, Express, EJS, Sequelize e
-              SQLite.
+              Aplicação de Upload de Arquivos com status de tamanho do arquivo no console.
             </p>
-            <a href="https://github.com/marcelodfreitas/URL-SHORTS"
+            <a target="_blank" href="https://file-upload-vii9.vercel.app/"
               ><button>Ver Projeto</button></a
             >
           </div>
 
           <div class="card">
-            <img src="./img/3.png" alt="" />
+            <img src="./img/3.png" alt="" class="projeto3" />
             <h5>Gerador de QRCode</h5>
             <p>
               Consumo de API para a geração do QRCode através do link informado
               no input.
             </p>
-            <a
-              href="https://github.com/marcelodfreitas/QRCODE-GENERATOR/tree/master?tab=readme-ov-file"
+            <a target="_blank" href="https://qrcode-generator-murex.vercel.app/"
+              ><button>Ver Projeto</button></a
+            >
+          </div>
+
+          <div class="card4">
+            <img src="./img/4.png" alt="" class="projeto4" />
+            <h5>Gerenciamento de Compromissos</h5>
+            <p>
+              Aplicação web para gerenciamento de compromissos. Utilizado HTML, CSS e JavaScript, oferece uma interface minimalista e interativa. 
+            </p>
+            <a target="_blank" href="https://crud-compromissos.vercel.app/"
+              ><button>Ver Projeto</button></a
+            >
+          </div>
+
+          <div class="card5">
+            <img src="./img/5.png" alt="" class="projeto5" />
+            <h5>Relógio Digital</h5>
+            <p>
+              Relógio Digital interativo, exibindo horas, minutos e segundos. Desenvolvido utilizando HTML, CSS e Javascript, utiliza efeitos visuais para uma experiência dinâmica.
+            </p>
+            <a target="_blank" href="https://digital-clock-design.vercel.app/"
+              ><button>Ver Projeto</button></a
+            >
+          </div>
+
+          <div class="card6">
+            <img src="./img/6.png" alt="" class="projeto6" />
+            <h5>Cadastro de Cartão</h5>
+            <p>
+              Página para Cadastro de Cartão de Crédito. A cada reload da página, troca a imagem do cartão.
+            </p>
+            <a target="_blank" href="https://credit-card-animation-rust.vercel.app/"
               ><button>Ver Projeto</button></a
             >
           </div>
@@ -107,7 +137,7 @@
     </section>
 
     <footer id="contato">
-      <h5>Marcelo L Freitas</h5>
+      <h5><span class="letter">M</span>arcelo <span class="letter">L</span>empek</h5>
       <p>Para mais informações e mais projetos...</p>
 
       <div class="">
@@ -146,6 +176,6 @@
       </div>
       <a href="#nav"><i class="bx bx-up-arrow-circle bottom"></i></a>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

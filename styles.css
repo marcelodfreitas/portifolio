@@ -7,6 +7,14 @@
     font-family: "Ubuntu", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-main: #00ff00;
+}
+
 .container-principal {
     height: 100vh;
     width: 100%;
@@ -49,7 +57,7 @@ nav {
 }
 
 .portfolio span {
-    color: #ff6600;
+    color: var(--color-main);
 }
 
 li {
@@ -67,12 +75,12 @@ li a {
 }
 
 li a:hover {
-    color: #ff6600;
+    color: var(--color-main);
     transition: 0.5s;
 }
 
 .navList {
-    color: #ff6600;
+    color: var(--color-main);
 }
 
 .nome {
@@ -83,7 +91,7 @@ li a:hover {
 }
 
 .nome span {
-    color: #ff6600;
+    color: var(--color-main);
 }
 
 .nome h1 {
@@ -100,13 +108,60 @@ li a:hover {
     position: relative;
     left: 150px;
     border-radius: 50%;
-    
 }
+
+.lempek {
+    display: inline-block;
+    vertical-align: middle; /* Mantém alinhado com o texto ao lado */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    width: 0;
+    font-size: inherit; /* Garante que o tamanho da fonte seja o mesmo do h1 */
+    line-height: inherit; /* Mantém a mesma altura de linha do h1 */
+    animation: typing 2s steps(6, end) forwards, 
+    cursor 0.5s steps(2, start) infinite;
+    position: relative;
+    bottom: 5px;
+}
+
+/* Efeito de piscar do cursor */
+@keyframes cursor {
+    from {
+        border-right-color: rgba(255,255,255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+/* Efeito de digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 13ch; /* Define o tamanho do texto em caracteres */
+    }
+}
+
+
+
+
+.project {
+    color: #00ff00;
+}
+
+.letter {
+    color: #00ff00;
+}
+
 .about {
     display: flex;
     align-items: center;
     background-color: #000000;
     padding: 50px 0;
+    height: 500px;
 }
 
 .text-about {
@@ -126,11 +181,11 @@ li a:hover {
 }
 
 .text-about button {
-    background-color:#ff6600;
+    background-color:var(--color-main);
     margin-top: 20px;
     width: 150px;
     height: 40px;
-    border: 2px solid #ff6600;
+    border: 2px solid var(--color-main);
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
@@ -140,12 +195,14 @@ li a:hover {
 
 .text-about button:hover {
     background-color: #000000;
-    border: 2px solid #ff6600;
+    border: 2px solid var(--color-main);
     transition: 0.5s;
 }
 
 .projetos {
     background-color: #191919;
+    
+    padding-top: 20px;
 }
 
 .projetos h2 {
@@ -170,28 +227,49 @@ li a:hover {
     border-radius: 10px;
 }
 
-.card h5 {
+.card h5,
+.card4 h5,
+.card5 h5,
+.card6 h5 {
     color: #ffffff;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.card p {
+.card p,
+.card4 p,
+.card5 p,
+.card6 p {
     margin-top: 10px;
     color: #ffffff;
 }
 
-.card button {
-    background-color:#ff6600;
+.card button,
+.card4 button,
+.card5 button,
+.card6 button {
+    background-color:var(--color-main);
     margin-top: 20px;
     width: 150px;
     height: 30px;
-    border: 2px solid #ff6600;
+    border: 2px solid var(--color-main);
     border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
     font-weight: bold;
     color: #000000;
+}
+
+.card4 button {
+    margin-top: 10px;
+}
+
+.card5 button {
+    margin-top: 15px;
+}
+
+.card6 button {
+    margin-top: 55px;
 }
 
 h1, h2, h5 {
@@ -206,25 +284,59 @@ button {
     transition: all 0.3s ease;
 }
 
-.card button:hover {
+.card button:hover,
+.card4 button:hover,
+.card5 button:hover,
+.card6 button:hover{
     background-color: #000000;
-    border: 2px solid #ff6600;
+    border: 2px solid var(--color-main);
     transition: 0.5s;
     color: #ffffff;
 }
 
 .cards {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaço entre os itens */
     padding-top: 20px;
-    padding-bottom: 60px;
-}
+    margin-left: 60px;
+    padding-bottom: 40px;
+  }
 
-.projeto2 {
+.projeto2,
+.projeto1,
+.projeto3 {
     width: 300px;
     position: relative;
     right: 20px;
-    
+}
+
+.projeto4 {
+    width: 300px;
+    position: relative;
+    right: 20px;
+}
+
+.projeto5 {
+    width: 300px;
+    position: relative;
+    right: 20px;
+}
+
+.projeto6 {
+    width: 300px;
+    position: relative;
+    right: 20px;
+}
+.card4,
+.card5,
+.card6 {
+    background-color: #000000;
+    height: 385px;
+    width: 335px;
+    border-radius: 20px;
+    padding: 20px 35px;
+    text-align: center;
 }
 
 footer {
@@ -268,7 +380,7 @@ footer a {
 }
 
 .social i {
-    background-color: #ff6600;
+    background-color: var(--color-main);
     color: rgb(255, 255, 255);
     padding: 5px;
     border-radius: 50%;
@@ -276,7 +388,8 @@ footer a {
 
 .social i:hover {
     transform: scale(1.4);
-    transition: 0.5s;
+    transition: 0.5s ease-in-out;
+    color: #000000;
 }
 
 .bottom {
@@ -284,7 +397,7 @@ footer a {
     bottom: 20px;
     right: 20px;
     font-size: 30px;
-    background-color: #ff6600;
+    background-color: var(--color-main);
     color: white;
     border: none;
     padding: 10px;
