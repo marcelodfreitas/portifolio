@@ -413,8 +413,8 @@ footer a {
     .imagem {
         position: relative;
         left: 60px;
-        top: -40px;
-        width: 270px;
+        top: 10px;
+        width: 280px;
         margin: 0 auto;
     }
 
@@ -484,13 +484,13 @@ footer a {
     .nome h1 {
         font-size: 30px;
         margin-left: 50px;
-        margin-top: -10px;
+        margin-top: 30px;
     }
 
     .nome h3 {
         font-size: 20px;
         margin-left: 50px;
-        margin-top: -8px;
+        margin-top: 8px;
     }
 
     .about img {
