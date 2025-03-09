@@ -201,8 +201,9 @@ li a:hover {
 
 .projetos {
     background-color: #191919;
-    
     padding-top: 20px;
+    
+
 }
 
 .projetos h2 {
@@ -368,6 +369,8 @@ footer a {
     height: 20px;
 }
 
+
+
 .social {
     margin-top: 15px;
     border-radius: 50px;
@@ -410,13 +413,19 @@ footer a {
     .imagem {
         position: relative;
         left: 60px;
-        top: -20px;
-        width: 280px;
+        top: -40px;
+        width: 270px;
         margin: 0 auto;
     }
 
     body {
         overflow-x: hidden;
+    }
+
+    .lempek {
+        animation: none; /* Desativa as animações */
+        width: auto; /* Restaura o comportamento de largura normal, se necessário */
+        border-right: none; /* Remove a borda se não for necessária */
     }
 
     .navList {
@@ -473,13 +482,15 @@ footer a {
     }
 
     .nome h1 {
-        font-size: 45px;
-        margin-left: 10px;
-        margin-top: 20px;
+        font-size: 30px;
+        margin-left: 50px;
+        margin-top: -10px;
     }
 
     .nome h3 {
         font-size: 20px;
+        margin-left: 50px;
+        margin-top: -8px;
     }
 
     .about img {
@@ -496,10 +507,21 @@ footer a {
         z-index: 1;
     }
 
+
+    .projetos {
+        height: 170pc;
+    }
+
+
     .cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 2 colunas */
+    gap: 20px; /* Espaço entre os itens */
+    padding-top: 20px;
+    margin-left: 60px;
+    padding-bottom: 40px;
+    justify-content: center;
+    margin-right: 20px;
     }
 
     .projeto2 {
@@ -521,6 +543,17 @@ footer a {
 
     nav li {
         margin: 10px 0;
+    }
+
+    .bottom {
+        font-size: 15px;
+        position: relative;
+        left: 170px;
+        top: 10px;
+    }
+
+    .lempek h1 {
+        font-size: 25px;
     }
 
     .mobileMenu.active .line1 {
