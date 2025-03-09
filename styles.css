@@ -426,6 +426,11 @@ footer a {
         animation: none; /* Desativa as animações */
         width: auto; /* Restaura o comportamento de largura normal, se necessário */
         border-right: none; /* Remove a borda se não for necessária */
+        
+    }
+
+    span lempek {
+        color: red;
     }
 
     .navList {
@@ -484,13 +489,13 @@ footer a {
     .nome h1 {
         font-size: 30px;
         margin-left: 50px;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .nome h3 {
         font-size: 20px;
         margin-left: 50px;
-        margin-top: 8px;
+        margin-top: 10px;
     }
 
     .about img {
