@@ -429,10 +429,6 @@ footer a {
         
     }
 
-    span lempek {
-        color: red;
-    }
-
     .navList {
         position: absolute;
         top: 7vh;
@@ -489,13 +485,13 @@ footer a {
     .nome h1 {
         font-size: 30px;
         margin-left: 50px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .nome h3 {
         font-size: 20px;
         margin-left: 50px;
-        margin-top: 10px;
+        margin-top: 13px;
     }
 
     .about img {
